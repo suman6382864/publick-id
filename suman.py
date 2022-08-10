@@ -19,7 +19,7 @@ except ImportError:
 print('\n\x1b[1;37m[•] Checking Update...');time.sleep(0.5)
 os.system('git pull')
 def Run():
-        elif bit == '32bit':
+        
             print("\n\x1b[1;92m[•] Congratulations ! Your Device Support this Tools")
             print('[•] Join Over Facebook Group First')
             os.system('xdg-open https://www.facebook.com/groups/994845054533001/permalink/')
