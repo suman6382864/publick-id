@@ -139,13 +139,6 @@ def back():
 ahsan="MIM"
 imt="-M1MF3RDUS=="
 ak="FM"
-myid=uuid.uuid4().hex[:10].upper()
-try:
-	key1 = open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
-except:
-	kok=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'w')
-	kok.write(myid+imt)
-	kok.close()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	clear()
