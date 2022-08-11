@@ -146,25 +146,6 @@ except:
 	kok=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'w')
 	kok.write(myid+imt)
 	kok.close()
-def login():
-	try:
-		token = open('.token.txt','r').read()
-		tokenku.append(token)
-		try:
-			sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
-			public_menu()
-		except KeyError:
-			Public()
-		except requests.exceptions.ConnectionError:
-			clear()
-			print(logo)
-			print ( ' [] Connection Timeout')
-			exit()
-	except IOError:
-		Public()
-def jalan(z):
-	for e in z + '\n':
-		sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	clear()
